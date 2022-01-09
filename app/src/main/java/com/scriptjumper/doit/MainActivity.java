@@ -1,6 +1,7 @@
 package com.scriptjumper.doit;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -43,7 +44,10 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
         tasksAdapter = new ToDoAdapter(db, this);
         tasksRecyclerView.setAdapter(tasksAdapter);
 
-        fab = findViewById(R.id.fab)
+        fab = findViewById(R.id.fab);
+
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new RecyclerItemTouchHelper(tasksAdapter));
+        itemTouchHelper.attachToRecyclerView(tasksRecyclerView);
 
         taskList = db.getAllTasks();
         Collections.reverse(taskList);
