@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="">
+  <a href="https://github.com/scriptjumper/DoIt">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -38,27 +38,26 @@
 
 ## About The Project
 
-...
+A ToDo list application that can be used to create, edit, and delete tasks. The app is made through Recycler View, Card View, and uses the SQLite database to store the tasks, in the To Do app. 
 
 Here's why:
 
-- ...
+- You can create, edit, check and delete tasks
+- Created tasks is stored on your device
+- Checking a task as completed does not delete the task (You can see you full history of you checked tasks unless you delete it)
 
 ### Built With
 
 ...
 
 - [java](https://www.java.com/en/)
+- [Android Studio](https://developer.android.com/)
 
 ## Getting Started
 
 ### Prerequisites
 
-...
-
-```sh
-  # some command goes here...
-```
+Ensure that you have **Android Studio** installed on your machine and you can build/run this application from there. No need to worry about installing any external dependencies **Android Studio** will install that for you when you open the project files in the editor.
 
 ### Installation
 
@@ -66,6 +65,9 @@ Here's why:
    ```sh
    $ git clone https://github.com/scriptjumper/DoIt.git
    ```
+2. Open the folder in **Android Studio**
+
+3. Run the application on any emulator
 
 ## Roadmap
 
